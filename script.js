@@ -1,4 +1,5 @@
-var tl = gsap.timeline();
+function loadigAnime(){
+  var tl = gsap.timeline();
 tl.from(".line h1", {
   y: 150,
   stagger: 0.1,
@@ -37,3 +38,6 @@ tl.from("#page1",{
     ease:Power4,
     duration:0.5
 })
+
+}
+loadigAnime()
