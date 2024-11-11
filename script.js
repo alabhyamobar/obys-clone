@@ -61,8 +61,7 @@ function boxAnimation() {
   const box = document.querySelector(".box");
 
   document.querySelectorAll("#hero3 h2").forEach(function (e) {
-    e.addEventListener("mouseenter", function (dets) {
-      console.log(dets)
+    e.addEventListener("mousemove", function (dets) {
       const boxWidth = box.offsetWidth / 2;
       const boxHeight = box.offsetHeight / 2;
 
@@ -80,7 +79,28 @@ function boxAnimation() {
   });
 }
 
+function playAnimation() {
+  const play = document.querySelector(".play");
+  document.querySelector(".video").addEventListener("mousemove", function (dets) {
+    document.querySelector("#crsr").style.display = "none";
+    gsap.to(".play", {
+      left: dets.clientX - this.offsetLeft,
+      top: dets.clientY - this.offsetHeight,
+    });
+  });
+
+  document.querySelector(".video").addEventListener("mouseleave", function (dets) {
+    document.querySelector("#crsr").style.display = "initial";
+    gsap.to(".play", {
+      left: '',
+      top: '',
+      duration:0.4,
+      ease:"power4.out",
+    });
+  });
+}
 loadigAnime();
 cursorAnimation();
 boxAnimation();
+playAnimation();
 Shery.makeMagnet("#nav-2 h4", {});

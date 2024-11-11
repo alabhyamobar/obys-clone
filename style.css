@@ -100,9 +100,10 @@ html,body{
     background-color: #111;
 }
 #page1{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #151515;
+    position: relative;
 }
 
 #page1 #nav{
@@ -160,11 +161,12 @@ html,body{
     -webkit-text-stroke: 2px #fff;
     color: transparent;
     font-weight: 500;
+    transition: all ease 0.3s;
 }
 
 .box{
-    height: 50vh;
-    width: 250px;
+    height: 100%;
+    width: 22vw;
     position: absolute;
     z-index: 1;
     left: 40%;
@@ -178,4 +180,28 @@ html,body{
 .box2{
     height: 50%;
     background-color: yellow;
+}
+
+.video{
+    margin-top:23vh;
+    height: 500px;
+    width: 70vw;
+    background-color: aqua;
+    position: relative;
+    left: 30%;   
+}
+.video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.play{
+    height: 20vh;
+    width: 20vh;
+    background-color: rgb(255, 168, 7);
+    border-radius: 50%;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    transform: translate(-10%,-50%);
 }
