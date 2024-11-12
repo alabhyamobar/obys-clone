@@ -227,10 +227,11 @@ html,body{
 }
 #page4{
     background-color: #151515;
+    padding-bottom: 47vh;
 }
 #page4-content{
     width: 72vw;
-    margin-left: 38vh;
+    margin-left: 50vh;
 }
 
 #page4-content h1{
@@ -245,8 +246,8 @@ html,body{
     margin-bottom:15vh ;
 }
 #page4-content #topf{
-    width: 60vh;
-    font-size:4vh ;
+    width: 78vh;
+    font-size:4.5vh ;
     font-weight: 900;
     margin-bottom: 4.4vh;
 }
@@ -265,6 +266,7 @@ html,body{
 
 #text{
     width: 35vh;
+    line-height:3vh ;
     font-size: 2vh;
     font-weight: 300;
 }
@@ -272,9 +274,9 @@ html,body{
 .blue{
     background-color: #3F7DF4;
     width: 45%;
-    height: 60vh;
+    height: 80vh;
     position: absolute;
     left: 38%;
-    top: 60%;
+    top: 65%;
     z-index: 3;
 }
