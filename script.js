@@ -67,7 +67,7 @@ function loadigAnime() {
     opacity: 0,
   });
   tl.from("#hero1 h1,#hero2 h1,#hero3 h2,#hero4 h1", {
-    y: 120,
+    y: 140,
     stagger: 0.2,
   });
 }
@@ -133,7 +133,7 @@ locomativeAnimation()
 Shery.mouseFollower({
   //Parameters are optional.
   skew: true,
-  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+  // ease: "cubic-bezier(0.23, 1, 0.320, 1)",
   duration: 1,
 });
 
